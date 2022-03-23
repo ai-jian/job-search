@@ -26,7 +26,7 @@
     }
 
     .text-box {
-      width: 80%;
+      width: 75%;
       font-size: 1rem;
       font-weight: bold;
       border: none;
@@ -36,8 +36,12 @@
     }
 
     .btn {
-      width: 20%;
+      width: 25%;
+      color: #fff;
       border-radius: 0 0.5rem 0.5rem 0;
+      &:hover {
+        color: #5924e99e;
+      }
     }
   }
 
@@ -50,6 +54,7 @@
 
     @include tablet {
       margin-top: 1.5rem;
+      width: 50%;
     }
   }
 }

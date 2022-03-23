@@ -49,6 +49,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 /* page background */
@@ -73,7 +74,8 @@ body {
 
 // links & buttons
 
-a {
+a,
+.lightup {
   text-decoration: none;
   color: var(--dark-color);
   display: grid;
@@ -83,9 +85,11 @@ a {
   transition: 0.5s;
 }
 
-a:hover {
+a:hover,
+.lightup:hover {
   background: #f9ffff;
   color: #fff;
+  color: #4309e4;
   border-radius: 5px;
   box-shadow: 0 0 5px #f9ffff, 0 0 25px #f9ffff, 0 0 50px #f9ffff,
     0 0 100px #f9ffff;

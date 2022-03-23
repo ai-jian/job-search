@@ -12,6 +12,13 @@ header {
 
   .logo {
     font-size: 1.5rem;
+    // color: blue;
+    &:hover {
+      background: linear-gradient(to right, #e6779e, #7859cd);
+      background-clip: text;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
   }
 
   .header-search {

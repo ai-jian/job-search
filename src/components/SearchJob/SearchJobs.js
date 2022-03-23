@@ -30,7 +30,7 @@ const SearchJobs = () => {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)} />
                 <button
-                    className="btn"
+                    className="btn lightup"
                     onClick={() => fetchJob(searchTerm)}>Find Jobs</button>
             </div>
             <div className="job-list">

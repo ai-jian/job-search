@@ -8,6 +8,10 @@
   border: 1px solid rgba(255, 255, 255, 0.125);
   position: relative;
 
+  @include tablet {
+    padding: 1rem 1.5rem;
+  }
+
   .job-title {
     width: 80%;
     font-size: 1.3rem;
@@ -24,6 +28,10 @@
     margin: 0.5rem;
     height: 3em;
     border-radius: 0.5rem;
+
+    @include tablet {
+      margin: 1rem 1.5rem;
+    }
   }
 
   .tags {
