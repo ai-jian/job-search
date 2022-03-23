@@ -6,7 +6,14 @@ const Header = () => {
         <header>
             <h1><Link to="/"
             className="logo text-gradient">Aicareer</Link></h1>
-            <Link to="/searchjobs" className="header-search text-gradient">Job Search</Link>
+            <ul>
+                <li>
+                    <Link to="/searchjobs" className="text-gradient">Job Search</Link>
+                </li>
+                <li>
+                    <Link to="/signin" className="text-gradient">Sign in</Link>
+                </li>
+            </ul>
         </header>
     )
 }

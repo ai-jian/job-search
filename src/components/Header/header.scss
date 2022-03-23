@@ -12,19 +12,18 @@ header {
 
   .logo {
     font-size: 1.5rem;
-    // color: blue;
-    &:hover {
-      background: linear-gradient(to right, #e6779e, #7859cd);
-      background-clip: text;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
-    }
   }
 
-  .header-search {
-    padding: 0;
-    margin: 0%;
-    display: inline;
+  ul {
+    display: flex;
+    li {
+      padding: 0 1rem;
+      list-style: none;
+      font-weight: bold;
+    }
+  }
+  .text-gradient {
+    -webkit-text-fill-color: rgba(178, 17, 193, 0.598);
   }
 
   @include tablet {

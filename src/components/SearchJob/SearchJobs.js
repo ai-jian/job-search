@@ -1,6 +1,7 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
 import JobCard from '../JobCard/JobCard'
+import JobDetail from '../JobDetail/JobDetail'
+import { useEffect, useState } from 'react'
 
 
 const API_URL = `https://remotive.io/api/remote-jobs`
@@ -23,6 +24,7 @@ const SearchJobs = () => {
     return (
         <div className="search-job">
 
+            {/* search bar */}
             <div className="search">
                 <input type="text"
                     className="text-box"
@@ -33,13 +35,15 @@ const SearchJobs = () => {
                     className="btn lightup"
                     onClick={() => fetchJob(searchTerm)}>Find Jobs</button>
             </div>
-            <div className="job-list">
+
+            {/* <div className="jobs-containter"> */}
+            <section className="job-list">
 
                 {jobs.length > 0
                     ? (
                         <div className="container">
-                            {jobs.map((j) => (
-                                <JobCard job={j} />
+                            {jobs.map((job) => (
+                                <JobCard job={job} />
                             ))}
                         </div>
                     ) : (
@@ -49,8 +53,12 @@ const SearchJobs = () => {
                     )
                 }
 
-            </div>
+            </section>
 
+            {/* <section className="job-details">
+                <JobDetail />
+            </section> */}
+            {/* </div> */}
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const JobCard = ({job}) => {
@@ -13,9 +14,8 @@ const JobCard = ({job}) => {
 
 
   return (
-    <div className="job-card">
-       
-        <h2 className="job-title">{job.title}</h2>
+      <a href={job.url} target="_blank" className="job-card lightup">
+        <h2 className="job-title" key={job.id}>{job.title}</h2>
         <div className="company-wrapper">
           <img src={job.company_logo} alt="Company Logo" className="job-logo" />
           <p className="job-company">{job.company_name}</p>
@@ -43,8 +43,8 @@ const JobCard = ({job}) => {
         </div>
         {/* <p className="job-date">posted: {job.publication_date}</p> */}
         <p className="job-date">Posted <strong>{days}</strong> days ago</p>
-      
-    </div>
+  
+        </a>
   )
 }
 
