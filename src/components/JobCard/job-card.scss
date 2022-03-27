@@ -7,6 +7,7 @@
   // box-shadow: 0 0.5rem 0.2rem 0 rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  color: #413679;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -18,6 +19,10 @@
   .job-title {
     width: 80%;
     font-size: 1.3rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
   .job-company {
     font-weight: bold;
@@ -42,10 +47,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 1rem 0;
+    margin: 0.7rem 0;
     .job-tag {
-      text-transform: capitalize;
+      text-transform: uppercase;
       background-color: $color-main;
+      font-weight: bold;
+      font-size: 0.7rem;
+      color: #fff;
       padding: 0.5em 1em;
       border-radius: 0.5rem;
     }
